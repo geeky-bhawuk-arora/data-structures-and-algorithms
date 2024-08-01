@@ -1,7 +1,7 @@
 // Linked List Cycle I
 // https://leetcode.com/problems/linked-list-cycle/
 
-public class Solution {
+class Solution {
     public boolean hasCycle(ListNode head) {
         Set<ListNode> set = new HashSet<>();
         while (head != null) {
@@ -15,12 +15,12 @@ public class Solution {
     }
 }
 
----------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
 // Linked List Cycle II
 // https://leetcode.com/problems/linked-list-cycle-ii/description/
 
-public class Solution {
+class Solution {
     public ListNode detectCycle(ListNode head) {
         Set<ListNode> set = new HashSet<>();
         while (head != null) {
