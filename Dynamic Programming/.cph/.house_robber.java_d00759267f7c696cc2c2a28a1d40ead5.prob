@@ -1,0 +1,1 @@
+{"name":"Local: house_robber","url":"c:\\Projects\\data-structures-and-algorithms\\Dynamic Programming\\house_robber.java","tests":[{"id":1742882436318,"input":"4\n11 12 13 11","output":"24"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Projects\\data-structures-and-algorithms\\Dynamic Programming\\house_robber.java","group":"local","local":true}
