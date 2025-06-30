@@ -1,0 +1,22 @@
+Problem Name - Problem Link
+
+--> Intuition
+___________
+___________
+
+--> Approach
+___________
+___________
+___________
+___________
+
+--> Complexity
+Time complexity: ___________
+___________
+
+Space complexity: ___________
+___________
+
+--> Code
+
+___________

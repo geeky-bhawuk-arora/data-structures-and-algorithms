@@ -1,0 +1,42 @@
+Jump Game - https://leetcode.com/problems/jump-game/
+
+--> Intuition
+We are given an array where each element represents the maximum jump length at that index.
+The goal is to determine whether we can reach the last index starting from the first index.
+Our first thought is to track the farthest position we can jump to as we move through the array.
+
+--> Approach
+We use a greedy algorithm.
+-- Start at the first index and keep track of the maximum index we can reach (maxReach).
+-- For each index i, check if it's within the reachable range.
+-- If not (i > maxReach), return false.
+-- Otherwise, update maxReach to be the maximum of its current value and i + nums[i].
+-- If at any point maxReach is greater than or equal to the last index, return true.
+
+--> Complexity
+Time complexity: O(n)
+We iterate through the array once, so the time complexity is linear.
+
+Space complexity: O(1)
+We use only one extra variable (maxReach) regardless of input size.
+
+--> Code
+
+class Solution {
+    public boolean canJump(int[] nums) {
+        int maxReach = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (i > maxReach) {
+                return false; 
+            }
+
+            maxReach = Math.max(maxReach, i + nums[i]);
+
+            if (maxReach >= nums.length - 1) {
+                return true; 
+            }
+        }
+        return false; 
+    }
+}
