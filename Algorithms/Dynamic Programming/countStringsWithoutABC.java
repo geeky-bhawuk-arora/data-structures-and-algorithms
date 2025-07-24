@@ -7,20 +7,13 @@ public class countStringsWithoutABC {
  
 
 
-    static int countStrings() {
-
+    static int countStrings(int n) {
+        
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
         int n = Integer.parseInt(br.readLine().trim());
-
-
-
-
-
-
-
+        System.out.println(countStrings(n));
     }
 }
