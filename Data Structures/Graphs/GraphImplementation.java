@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class graphs {
+public class GraphImplementation {
     static class Edge {
         int src;
         int dest;
